@@ -33,10 +33,13 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/background.css">
 
   </head>
 
 <body>
+    <canvas id="c" class="2d"></canvas>
+
 
     <div class="container">
         <div class="column">
@@ -53,11 +56,13 @@
 
             <!-- Replace with your name or brand -->
             <h1>
-              <div>Sophia Fox</div>
+              <div style="font-style: italic;">Sophia Fox</div>
             </h1>
 
-            <!-- Add a short description about yourself or your brand -->
-            <p>Your Favorite Fox 🦊 / Porn Star & Artist</p>
+            <div class="content">
+                  <!-- Add a short description about yourself or your brand -->
+                  <p>Your Favorite Fox <span class="emoji">🦊</span> / Porn Star & Artist</p>
+            </div>
 
             <!-- All your buttons go here -->
             <div class="button-stack" role="navigation">
@@ -105,5 +110,6 @@
   </div>
 
 </body>
+<script src="./background.js" async ></script>
 
 </html>
