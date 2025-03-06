@@ -504,7 +504,7 @@
 /* VIP */
 .button-vip {
 	--button-text:#ffffff;
-	background-image:linear-gradient(-135deg, 	#f95979,#d62a5e,#c90084);
+	background-image:linear-gradient(-135deg, 	#ffb8e9,#efc8d9, 	#ffb8e9);
 }
 
 /* Threads */
