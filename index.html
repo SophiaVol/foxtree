@@ -1,101 +1,364 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="theme-auto" lang="en">
-
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Sophia Fox</title>
-    <link rel="icon" type="image/x-icon" href="/images/avatar.jpg" >
-    <meta name="description" content="Sophia Fox Main Page">
-    
+    <link rel="icon" type="image/x-icon" href="/images/avatar.jpg" />
+    <meta name="description" content="Sophia Fox Main Page" />
+
     <!-- <meta name="keywords" content=""> -->
-    
-    <meta rel="canonical" href="https://sophiavol.netlify.app/">
-    
-    <meta name="author" content="Sophia Fox">
-    
+
+    <meta rel="canonical" href="https://sophiavol.netlify.app/" />
+
+    <meta name="author" content="Sophia Fox" />
+
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/brands.css">
-    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/brands.css" />
+    <link rel="stylesheet" href="css/background.css" />
 
     <script>
-      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-      posthog.init('phc_ICEvydStKcwdHla6nBehaSkqJ0bFB9zbZ90Bt9iRB7d', {
-          api_host: 'https://us.i.posthog.com',
-          person_profiles: 'identified_only',
-          
-      })
+      !(function (t, e) {
+        var o, n, p, r;
+        e.__SV ||
+          ((window.posthog = e),
+          (e._i = []),
+          (e.init = function (i, s, a) {
+            function g(t, e) {
+              var o = e.split(".");
+              2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                (t[e] = function () {
+                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                });
+            }
+            ((p = t.createElement("script")).type = "text/javascript"),
+              (p.crossOrigin = "anonymous"),
+              (p.async = !0),
+              (p.src =
+                s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
+                "/static/array.js"),
+              (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+                p,
+                r,
+              );
+            var u = e;
+            for (
+              void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                u.people = u.people || [],
+                u.toString = function (t) {
+                  var e = "posthog";
+                  return (
+                    "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                  );
+                },
+                u.people.toString = function () {
+                  return u.toString(1) + ".people (stub)";
+                },
+                o =
+                  "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(
+                    " ",
+                  ),
+                n = 0;
+              n < o.length;
+              n++
+            )
+              g(u, o[n]);
+            e._i.push([i, s, a]);
+          }),
+          (e.__SV = 1));
+      })(document, window.posthog || []);
+      posthog.init("phc_ICEvydStKcwdHla6nBehaSkqJ0bFB9zbZ90Bt9iRB7d", {
+        api_host: "https://us.i.posthog.com",
+        person_profiles: "identified_only",
+      });
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   </head>
 
-<body>
-    <canvas id="c" class="2d"></canvas>
+  <body>
+    <script id="vertexShader" type="x-shader/x-vertex">
+      void main() {
+          gl_Position = vec4( position, 1.0 );
+      }
+    </script>
 
+    <script id="fragmentShader" type="x-shader/x-fragment">
+      uniform vec2 u_resolution;
+      uniform vec2 u_mouse;
+      uniform float u_time;
+      uniform sampler2D u_noise;
+
+      #define PI 3.141592653589793
+      #define TAU 6.
+
+      const float multiplier = 25.5;
+
+      const float zoomSpeed = 10.;
+      const int layers = 10;
+
+      const int octaves = 5;
+
+      vec2 hash2(vec2 p)
+      {
+        vec2 o = texture2D( u_noise, (p+0.5)/256.0, -100.0 ).xy;
+        return o;
+      }
+
+      mat2 rotate2d(float _angle){
+          return mat2(cos(_angle),sin(_angle),
+                      -sin(_angle),cos(_angle));
+      }
+
+      vec3 hsb2rgb( in vec3 c ){
+        vec3 rgb = clamp(abs(mod(c.x*6.0+vec3(0.0,4.0,2.0),
+                                 6.0)-3.0)-1.0,
+                         0.0,
+                         1.0 );
+        rgb = rgb*rgb*(3.0-2.0*rgb);
+        return c.z * mix( vec3(1.0), rgb, c.y);
+      }
+
+      float hash(vec2 p)
+      {
+        float o = texture2D( u_noise, (p+0.5)/256.0, -100.0 ).x;
+        return o;
+      }
+      float noise(vec2 uv) {
+        vec2 id = floor(uv);
+        vec2 subuv = fract(uv);
+        vec2 u = subuv * subuv * (3. - 2. * subuv);
+        float a = hash(id);
+        float b = hash(id + vec2(1., 0.));
+        float c = hash(id + vec2(0., 1.));
+        float d = hash(id + vec2(1., 1.));
+        return mix(mix(a, b, u.x), mix(c, d, u.x), u.y);
+      }
+      float fbm(in vec2 uv) {
+        float s = .0;
+        float m = .0;
+        float a = .5;
+        for(int i = 0; i < octaves; i++) {
+          s += a * noise(uv);
+          m += a;
+          a *= .5;
+          uv *= 2.;
+        }
+        return s / m;
+      }
+
+      vec3 domain(vec2 z){
+        return vec3(hsb2rgb(vec3(atan(z.y,z.x)/TAU,1.,1.)));
+      }
+      vec3 colour(vec2 z) {
+          return domain(z);
+      }
+
+      // The render function is where we render the pattern to be added to the layer
+      vec3 render(vec2 uv, float scale, vec3 colour) {
+        vec2 id = floor(uv);
+        vec2 subuv = fract(uv);
+        vec2 rand = hash2(id);
+        float bokeh = abs(scale) * 1.;
+
+        float particle = 0.;
+
+        if(length(rand) > 1.3) {
+          vec2 pos = subuv-.5;
+          float field = length(pos);
+          particle = smoothstep(.3, 0., field);
+          particle += smoothstep(.4, 0.34 * bokeh, field);
+        }
+        return vec3(particle*2.);
+      }
+
+      vec3 renderLayer(int layer, int layers, vec2 uv, inout float opacity, vec3 colour, float n) {
+        vec2 _uv = uv;
+        // Scale
+        // Generating a scale value between zero and 1 based on a mod of u_time
+        // A frequency of 10 dixided by the layer index (10 / layers * layer)
+        float scale = mod((u_time + zoomSpeed / float(layers) * float(layer)) / zoomSpeed, -1.);
+        uv *= 20.; // The initial scale. Increasing this makes the cells smaller and the "speed" apepar faster
+        uv *= scale*scale; // then modifying the overall scale by the generated amount
+        // uv *= 1. + ( ( n*.5 ) * ( length(_uv) ) );
+        // uv += .5*float(layer);
+        uv = rotate2d(u_time / 10.) * uv; // rotarting
+        uv += vec2(25. + sin(u_time*.1)) * float(layer); // ofsetting the UV by an arbitrary amount to make the layer appear different
+
+        // render
+        vec3 pass = render(uv * multiplier, scale, colour) * .2; // render the pass
+
+         // this is the opacity of the layer fading in from the "bottom"
+        opacity = 1. + scale;
+        float _opacity = opacity;
+
+        // pass += n * .5 * mix(vec3(0., .5, 1.5), vec3(1., .5, 0.), opacity);
+
+        // This is the opacity of the layer fading out at the top (we want this minimal, hence the smoothstep)
+        float endOpacity = smoothstep(0., 0.4, scale * -1.);
+        opacity += endOpacity;
+
+        return pass * _opacity * endOpacity;
+      }
+
+      void main() {
+          vec2 uv = (gl_FragCoord.xy - 0.3 * u_resolution.xy);
+
+          if(u_resolution.y < u_resolution.x) {
+            uv /= u_resolution.y;
+          } else {
+            uv /= u_resolution.x;
+          }
+
+          // uv.y += cos(u_time * .1) * .5;
+          // uv.x += sin(u_time * .1) * .5;
+
+          // float n = fbm(uv * 3. - 2.);
+          float n = fbm((uv + vec2(sin(u_time*.1), u_time*.1)) * 1. - 2.);
+
+          vec3 colour = vec3(0.);
+          // colour = n * mix(vec3(0., .5, 1.5), vec3(1., .5, -.1), n);
+          colour = n * mix(vec3(0., .5, 1.5), clamp(vec3(1., .5, .25)*2., 0., 1.), n);
+          // colour -= n*n*n*n*.4;
+          // colour += smoothstep(.8, 2.5, sin(n*n*n*8.))*.4;
+
+          float opacity = 1.;
+          float opacity_sum = 1.;
+
+          for(int i = 1; i <= layers; i++) {
+            colour += renderLayer(i, layers, uv, opacity, colour, n);
+            opacity_sum += opacity;
+          }
+
+          colour /= opacity_sum;
+
+          gl_FragColor = vec4(clamp(colour * 14., 0., 1.),1.0);
+      }
+    </script>
+
+    <div id="container" touch-action="none"></div>
+
+    <!-- <canvas id="background" class="background"></canvas> -->
 
     <div class="container">
-        <div class="column">
+      <div class="column">
+        <img
+          class="avatar avatar--rounded"
+          src="images/avatar.jpg"
+          srcset="images/avatar.jpg 2x"
+          alt="LittleLink"
+        />
 
-            <img class="avatar avatar--rounded" src="images/avatar.jpg" srcset="images/avatar.jpg 2x" alt="LittleLink">
+        <h1>
+          <div class="para" style="font-style: bold"><h2>Sophia Fox</h2></div>
+        </h1>
 
-            <h1>
-              <div style="font-style: italic;">Sophia Fox</div>
-            </h1>
+        <div class="content para">
+          <p>
+            Your Favorite Fox <span class="emoji">🦊</span> / Porn Star & Artist
+          </p>
+        </div>
 
-            <div class="content">
-                  <p>Your Favorite Fox <span class="emoji">🦊</span> / Porn Star & Artist</p>
-            </div>
+        <div class="button-stack" role="navigation">
+          <!-- My PornHub 💋🔞 -->
+          <a
+            class="button button-my-pornhub-----"
+            href="https://www.pornhub.com/model/sophia-fox"
+            target="_blank"
+            rel="noopener"
+            role="button"
+            ><img
+              class="icon"
+              aria-hidden="true"
+              src="images/icons/pornhub.svg"
+              alt="PornHub"
+            />PornHub 🔞</a
+          >
 
-            <div class="button-stack" role="navigation">
+          <!--VIP Subscription -->
+          <a
+            class="button button-vip"
+            href="https://t.me/SophiaVolBot?start=start"
+            target="_blank"
+            rel="noopener"
+            role="button"
+            ><img
+              class="icon"
+              aria-hidden="true"
+              src="images/icons/telegram.svg"
+              alt="Telegram Logo"
+            />VIP 🔞💦</a
+          >
 
-              <!-- My PornHub 💋🔞 -->
-              <a class="button button-my-pornhub-----" href="https://www.pornhub.com/model/sophia-fox" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/pornhub.svg" alt="PornHub">PornHub 🔞</a>
+          <!-- Telegram -->
+          <a
+            class="button button-telegram"
+            href="https://t.me/SophiaFoxi"
+            target="_blank"
+            rel="noopener"
+            role="button"
+            ><img
+              class="icon"
+              aria-hidden="true"
+              src="images/icons/telegram.svg"
+              alt="Telegram Logo"
+            />Telegram</a
+          >
 
-              <!--VIP Subscription -->
-              <a class="button button-vip" href="https://t.me/SophiaVolBot?start=start" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/telegram.svg" alt="Telegram Logo">VIP 🔞💦</a>
-              
+          <!-- X -->
+          <a
+            class="button button-x"
+            href="https://x.com/SophiaVol"
+            target="_blank"
+            rel="noopener"
+            role="button"
+            ><img
+              class="icon"
+              aria-hidden="true"
+              src="images/icons/x.svg"
+              alt="X Logo"
+            />Twitter</a
+          >
 
-              <!-- Telegram -->
-              <a class="button button-telegram" href="https://t.me/SophiaFoxi" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/telegram.svg" alt="Telegram Logo">Telegram</a>
+          <!-- Instagram -->
+          <a
+            class="button button-instagram"
+            href="https://www.instagram.com/sophiavolko"
+            target="_blank"
+            rel="noopener"
+            role="button"
+            ><img
+              class="icon"
+              aria-hidden="true"
+              src="images/icons/instagram.svg"
+              alt="Instagram Logo"
+            />Instagram ❤️</a
+          >
 
-              <!-- X -->
-              <a class="button button-x" href="https://x.com/SophiaVol" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/x.svg" alt="X Logo">Twitter</a>
-              
-              <!-- Instagram -->
-              <a class="button button-instagram" href="https://www.instagram.com/sophiavolko" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram ❤️</a>
+          <!-- Discord -->
+          <!-- <a class="button button-discord" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/discord.svg" alt="Discord Logo">Discord</a> -->
 
-              
-              <!-- Discord -->
-              <!-- <a class="button button-discord" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/discord.svg" alt="Discord Logo">Discord</a> -->
+          <!-- GitHub -->
+          <!-- <a class="button button-github" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/github.svg" alt="GitHub Logo">GitHub</a> -->
 
-          
-              <!-- GitHub -->
-              <!-- <a class="button button-github" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/github.svg" alt="GitHub Logo">GitHub</a> -->
+          <!-- OnlyFans -->
+          <!-- <a class="button button-onlyfans" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/onlyfans.svg" alt="OnlyFans Logo">OnlyFans (18+)</a> -->
 
-              <!-- OnlyFans -->
-              <!-- <a class="button button-onlyfans" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/onlyfans.svg" alt="OnlyFans Logo">OnlyFans (18+)</a> -->
+          <!-- Patreon -->
+          <!-- <a class="button button-patreon" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/patreon.svg" alt="Patreon Logo">Patreon</a> -->
 
-              <!-- Patreon -->
-              <!-- <a class="button button-patreon" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/patreon.svg" alt="Patreon Logo">Patreon</a> -->
+          <!-- Reddit -->
+          <!-- <a class="button button-reddit" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/reddit.svg" alt="Reddit Logo">Reddit</a> -->
+        </div>
 
-              <!-- Reddit -->
-              <!-- <a class="button button-reddit" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/reddit.svg" alt="Reddit Logo">Reddit</a> -->
-
-
-
+        <footer>
+          <!-- <p style="font-weight: 600;">Created By Sophia Fox.</p> -->
+        </footer>
       </div>
-        
-      <footer >
-        <!-- <p style="font-weight: 600;">Created By Sophia Fox.</p> -->
-      </footer>
-    
     </div>
-  </div>
-
-</body>
-<script src="./background.js" async ></script>
-
+  </body>
+  <script src="./background.js" async></script>
 </html>
