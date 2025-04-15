@@ -326,6 +326,14 @@ button {
   transition-duration: .4s;
 }
 
+.button::before {
+  box-shadow: var(--before-shadow);
+}
+
+.button::after {
+  box-shadow: var(--after-shadow);
+}
+
 /* Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .icon {
