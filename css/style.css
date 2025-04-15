@@ -18,6 +18,11 @@ html {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: bold;
+
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+
 }
 
 body {
@@ -252,6 +257,73 @@ button {
   margin-bottom: 1rem;
   text-align: center;
   line-height: 2;
+
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+.button {
+  position: relative;
+  border: 1px solid currentColor;
+  border-radius: 12px;
+  padding: 16px;
+  transition-property: border-color;
+  transition-duration: .2s;
+  cursor: pointer;
+  
+  &:hover,
+  &:focus-visible {
+    border-color: transparent;
+    
+    &::before {
+      opacity: 1;
+    }
+  }
+  
+  &:active {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.button::before,
+.button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.button::before {
+  box-shadow:
+    0 0 2px #fff,
+    0 -2px 6px #f16427,
+    2px 0 6px #36ff00,
+    -2px 0 6px #e22d91,
+    0 2px 6px #3f2aff;
+  transition-duration: .2s;
+}
+
+.button::after {
+  box-shadow:
+    0 0 8px 4px #fff,
+    0 -4px 12px 4px #f16427,
+    0 4px 12px 4px #3f2aff,
+    -4px 0 12px 4px #e22d91,
+    4px 0 12px 4px #aeff26;
+  transition-duration: .4s;
 }
 
 /* Icons
