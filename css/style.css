@@ -2,11 +2,16 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
   font-size: 16px;
-  font-family: "Playwrite AU VIC", cursive;
 }
 
 /* Additional Styling Settings
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+  overflow-y: auto;
+  height: auto;
+}
+
 
 * {
   font-family: "Edu SA Beginner", cursive;
@@ -40,6 +45,7 @@ body {
   margin: 0 auto;
   padding: 3rem 1.25rem 0 1.25rem;
   box-sizing: border-box;
+  
 }
 .container-left {
   position: relative;
@@ -94,6 +100,7 @@ body {
   font-size: 1.125rem; /* 18px */
   font-weight: 400;
   line-height: 1.6;
+  
 }
 
 /* Typography
