@@ -31,7 +31,25 @@
 	--button-border:1px solid #ffffff;
 }
 
-/* My PornHub 💋🔞 */
+/* Emblem */
+.glider-icon {
+	position: fixed;
+	bottom: 10px; 
+	right: 10px;
+	z-index: 1000;
+	width: 24px;
+	height: 24px;
+	filter: invert(0); /* Dark in light mode (default) */
+  }
+  
+  @media (prefers-color-scheme: dark) {
+	.glider-icon {
+	  filter: invert(1); /* Light in dark mode */
+	}
+  }
+
+
+/* PornHub */
 .button-my-pornhub----- {
 	--button-text:#FFFFFF;
     --button-background: #1b1b1b;

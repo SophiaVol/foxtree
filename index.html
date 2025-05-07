@@ -81,44 +81,6 @@
       });
     </script>
 
-    <script>
-      // Random color for buttons
-      function getRandomColor() {
-        return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
-      }
-
-      function applyRandomShadows(button) {
-        const randomShadowsBefore = [
-          `0 0 2px ${getRandomColor()}`,
-          `0 -2px 6px ${getRandomColor()}`,
-          `2px 0 6px ${getRandomColor()}`,
-          `-2px 0 6px ${getRandomColor()}`,
-          `0 2px 6px ${getRandomColor()}`
-        ].join(',');
-
-        const randomShadowsAfter = [
-          `0 0 8px 4px ${getRandomColor()}`,
-          `0 -4px 12px 4px ${getRandomColor()}`,
-          `0 4px 12px 4px ${getRandomColor()}`,
-          `-4px 0 12px 4px ${getRandomColor()}`,
-          `4px 0 12px 4px ${getRandomColor()}`
-        ].join(',');
-
-        button.style.setProperty('--before-shadow', randomShadowsBefore);
-        button.style.setProperty('--after-shadow', randomShadowsAfter);
-      }
-
-      document.addEventListener('DOMContentLoaded', () => {
-        const buttons = document.querySelectorAll('.button');
-        buttons.forEach(button => {
-          applyRandomShadows(button); // Set initial shadows
-          button.addEventListener('mouseenter', () => applyRandomShadows(button)); // Refresh on hover
-        });
-      });
-    </script>
-
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
   </head>
 
   <body>
@@ -240,10 +202,14 @@
           <!-- <a class="button button-reddit" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/reddit.svg" alt="Reddit Logo">Reddit</a> -->
         </div>
 
-        <footer>
+        <footer style="display: flex; justify-content: flex-end;;">
           <!-- <p style="font-weight: 600;">Made With Heart <3</p> -->
         </footer>
       </div>
+      <div class="glider-icon">
+        <img src="http://www.catb.org/hacker-emblem/glider.svg" width="24px" height="24px" />
+      </div>
+      
     </div>
   </body>
   <!-- <script src="./background.js" async></script> -->

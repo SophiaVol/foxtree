@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-color: #FFC0CB;
+	background-color: var(--pink);
 	overflow-x:hidden;
 	overflow-y:hidden;
 }
@@ -43,7 +43,7 @@ body{
 .wave.-two {
   animation: drift 3000ms infinite linear;
   opacity: .1;
-  background: black;
+  background: var(--dark-100);
 	position: fixed;
 }
 
@@ -85,9 +85,9 @@ body{
   -ms-flex-align: center;
   align-items: center;
 
-  background: #25a7d7;
-  background: -webkit-linear-gradient(#25a7d7, #2962FF);
-  background: linear-gradient(#25a7d7, #25a7d7);
+  background: var(--navy-blue);
+  background: -webkit-linear-gradient( var(--navy-blue), #2962FF);
+  background: linear-gradient(var(--navy-blue), var(--navy-blue));
 }
 
  .icon {
