@@ -609,6 +609,12 @@
 	--button-border:1px solid #FFFFFF;
 }
 
+.button-fanhub {
+	--button-text:#FFFFFF;
+	--button-background:#000000;
+	--button-border:1px solid #FFFFFF;
+}
+
 /* YouTube */
 .button-yt {
 	--button-text:#ffffff;
