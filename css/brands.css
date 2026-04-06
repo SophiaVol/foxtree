@@ -519,6 +519,19 @@
 	--button-background:#3faee8;
 }
 
+/* X (Twitter) */
+.button-x {
+	--button-text:#FFFFFF;
+	--button-background:#000000;
+	--button-border:1px solid #FFFFFF;
+}
+
+/* Fanhub */
+.button-fanhub {
+	--button-text:#FFFFFF;
+	--button-background:#FF4081;
+}
+
 /* VIP */
 .button-vip {
 	--button-text:#ffffff;
